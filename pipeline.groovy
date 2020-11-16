@@ -14,7 +14,7 @@ pipelineJob("Pipeline Basic Job") {
                 git {
                     remote { url(repo) }
                     branches("master")
-                    scriptPath("misc/Jwnkinsfile")
+                    scriptPath("misc/Jenkinsfile")
                     extensions {}
                 }
             }
