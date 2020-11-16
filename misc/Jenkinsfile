@@ -5,9 +5,6 @@ node {
         checkout scm
     }
     
-    def username = "whoami"
-    echo useername
-    
     stage("Build image") {
         app = docker.build("essigi/devops_sample_nodejs")
     }
