@@ -4,7 +4,8 @@ node {
     stage("Clone repository") {
         checkout scm
     }
-
+    echo "hoge"
+    
     stage("Build image") {
         app = docker.build("essigi/devops_sample_nodejs")
     }
